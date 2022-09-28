@@ -1,0 +1,69 @@
+.billboard {
+	padding: 92px 0;
+	@include media-max(768) {
+		padding: 29px 0px 37px;
+	}
+	& .container{
+		@include media-max(768) {
+			padding: 0;
+		}
+	}
+	&__item {
+		padding: 31px 91px;
+		height: 411px;
+		background: rgba(23, 36, 83, 0.73);
+		border-radius: 7px;
+		@include media-max(768) {
+			padding: 0;
+			border-radius: 0;
+			padding-top: 50px;
+		}
+	}
+
+	&-logo {
+		margin-bottom: 62px;
+		display: inline-block;
+		@include media-max(768) {
+			margin: 0 auto 22px;
+			display: block;
+			text-align: center;
+		}
+	}
+
+	&__title {
+		margin-bottom: 31px;
+		font-weight: 600;
+		font-size: 45px;
+		line-height: 52px;
+		color: #FFFFFF;
+		max-width: 718px;
+		@include media-max(768) {
+			text-align: center;
+			margin: 0 auto 21px;
+			font-size: 35px;
+		}
+		@include media-max(550) {
+			font-size: 24px;
+		}
+	}
+
+	&__btn {
+		width: 218px;
+		height: 48px;
+		background: #EF8F3C;
+		border-radius: 29px;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 17px;
+		color: #FFFFFF;
+		@include media-max(768) {
+			margin: 0 auto;
+			display: block;
+		}
+	}
+	&__btn:hover{
+		background: #656565;
+		transition: all .3s;
+	}
+
+}

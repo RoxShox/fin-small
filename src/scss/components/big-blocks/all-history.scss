@@ -1,0 +1,33 @@
+.all-history{
+	&::before{
+		display: none;
+	}
+	& .history__items{
+		flex-wrap: wrap;
+		row-gap: 50px;
+	}
+	&__big-orange-circle{
+		position: absolute;
+		left: 0;
+		bottom: 107px;
+		@include media-max(1650) {
+			display: none;
+		}
+	}
+	&__big-gray-circle{
+		position: absolute;
+		right: 0;
+		top: 138px;
+		@include media-max(1650) {
+			display: none;
+		}
+	}
+	&__small-circle{
+		position: absolute;
+		top: 147px;
+		left: 0;
+		@include media-max(1450) {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,50 @@
+.rounded-btn {
+	display: inline-block;
+	position: relative;
+	z-index: 0;
+	width: 142px;
+	height: 45px;
+	background: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	font-family: inherit;
+
+	@include media-max(550) {
+		width: 108px;
+		height: 34px;
+	}
+
+	&__hit {
+		position: absolute;
+		top: -5%;
+		left: -5%;
+		width: 110%;
+		height: 110%;
+		z-index: 2;
+	}
+
+	&__border {
+		height: 100%;
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		pointer-events: none;
+		border: 1.2px solid #EF8F3C;
+		border-radius: 15px;
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 24px;
+		color: #222222;
+		display: inline-block;
+		@include media-max(550) {
+			font-size: 12px;
+		}
+	}
+}

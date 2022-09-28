@@ -1,0 +1,133 @@
+.banner {
+	padding: 32px 0;
+	position: relative;
+	z-index: 2;
+	@include media-max(768) {
+		padding: 32px 0 0 0;
+	}
+
+	&::before {
+		position: absolute;
+		content: '';
+		background-image: url(../img/banner-circle.png);
+		bottom: -310px;
+		right: 0;
+		width: 134.08px;
+		height: 574.08px;
+		@include media-max(1550) {
+			display: none;
+		}
+	}
+	& .container{
+		@include media-max(768) {
+			padding: 0;
+		}
+	}
+	&-slider {
+		position: relative;
+		@include media-max(768) {
+			text-align: center;
+		}
+	}
+
+	&-slider__item {
+		height: 411px;
+		border-radius: 7px;
+		background: rgba(23, 36, 83, 0.73);
+		padding: 67px 89px;
+		
+		@include media-max(768) {
+			border-radius: 0;
+			height: 286px;
+			padding: 0;
+			padding-top: 34px;
+		}
+
+	}
+
+	&-slider__title {
+		font-weight: 600;
+		font-size: 45px;
+		line-height: 52px;
+		color: #FFFFFF;
+		margin-bottom: 21px;
+		max-width: 519px;
+		@include media-max(768) {
+			margin: 0 auto;
+			font-size: 32px;
+			max-width: 360px;
+			margin-bottom: 14px;
+			line-height: 100%;
+		}
+		@include media-max(550) {
+			font-size: 24px;
+		}
+	}
+
+	&-slider__descr {
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 24px;
+		color: #FFFFFF;
+		max-width: 393px;
+		margin-bottom: 31px;
+		@include media-max(768) {
+			margin: 0 auto;
+			font-size: 12px;
+			margin-bottom: 22px;
+		}
+	}
+
+	&-slider__btn {
+		width: 218px;
+		height: 48px;
+		background: #EF8F3C;
+		border-radius: 29px;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 17px;
+		color: #FFFFFF;
+		transition: all .3s;
+		@include media-max(768) {
+			margin: 0 auto;
+		}
+	}
+	&-slider__btn:hover{
+		background: #656565;
+		transition: all .3s;
+	}
+
+	.slick-dots {
+		display: flex;
+		align-items: center;
+		column-gap: 6px;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		margin: 0;
+		@include media-max(768) {
+			top: auto;
+			bottom: -19px;
+			right: auto;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.slick-active {
+			background: #EF8F3C;
+		}
+
+		li {
+			width: 42px;
+			height: 9px;
+			background: #FFFFFF;
+			border-radius: 29px;
+			@include media-max(768) {
+				background: #DBDBDB;;
+			}
+
+			button {
+				font-size: 0;
+			}
+		}
+	}
+}

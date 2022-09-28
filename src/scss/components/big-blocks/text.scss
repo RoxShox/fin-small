@@ -1,0 +1,70 @@
+.text {
+	position: relative;
+	
+	.about-project__mobile-gray {
+		left: 0;
+		position: absolute;
+		top: -30px;
+		z-index: -1;
+		overflow-x: hidden;
+		@include media-min(1024) {
+			display: none;
+		}
+	}
+
+	&__inner {
+		padding: 192px 0px 214px;
+		border-bottom: 0.5px solid #E2E2E2;
+		text-align: center;
+		position: relative;
+		@include media-max(1024) {
+			padding: 90px 0px 100px;
+		}
+
+	}
+
+	&__title {
+		margin-bottom: 35px;
+
+		@include media-max(600) {
+			margin-bottom: 15px;
+		}
+	}
+
+	&__descr {
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 166.2%;
+		color: #1D1D1D;
+		max-width: 770px;
+		margin: 0 auto;
+
+		@include media-max(768) {
+			font-size: 16px;
+		}
+	}
+
+	&__big-circle {
+		left: 114px;
+		top: -30px;
+		position: absolute;
+
+		@include media-max(1520) {
+			display: none;
+		}
+	}
+
+	&__small-circle {
+		bottom: 45px;
+		position: absolute;
+		left: 230px;
+
+		@include media-max(1024) {
+			bottom: 0;
+			right: -87px;
+			left: auto;
+			bottom: -30px;
+			z-index: -1;
+		}
+	}
+}

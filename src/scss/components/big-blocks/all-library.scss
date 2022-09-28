@@ -1,0 +1,8 @@
+.all-library{
+	&::before{
+		display: none;
+	}
+	& .library__inner{
+		padding: 61px 0px 183px;
+	}
+}

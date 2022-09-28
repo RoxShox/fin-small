@@ -1,0 +1,39 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// small blocks
+@import "components/small-blocks/title";
+@import "components/small-blocks/validate";
+@import "components/small-blocks/mod-btn";
+
+
+
+
+
+// Big blocks
+@import "components/big-blocks/banner";
+@import "components/big-blocks/header";
+@import "components/big-blocks/about";
+@import "components/big-blocks/history";
+@import "components/big-blocks/library";
+@import "components/big-blocks/billboard";
+@import "components/big-blocks/partners";
+@import "components/big-blocks/information";
+@import "components/big-blocks/about-project";
+@import "components/big-blocks/text";
+@import "components/big-blocks/composition";
+@import "components/big-blocks/all-history";
+@import "components/big-blocks/all-library";
+@import "components/big-blocks/politic";
+@import "components/big-blocks/modal";
+
+
+
+@import "components/big-blocks/footer";
+
+
+
+
+@import "block/*.scss";

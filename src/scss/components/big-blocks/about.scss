@@ -1,0 +1,139 @@
+.about {
+	background: #FDFDFD;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+
+	&::before {
+		position: absolute;
+		content: '';
+		top: 61px;
+		background-image: url(../img/about-small-circle.svg);
+		left: 0;
+		width: 50px;
+		height: 100px;
+		z-index: 2;
+
+		@include media-max(768) {
+			display: none;
+		}
+	}
+
+	&::after {
+		position: absolute;
+		content: "";
+		background-image: url(../img/about-white-circle.svg);
+		left: 32%;
+		top: 67px;
+		width: 134.95px;
+		height: 134.95px;
+
+		@include media-max(1300) {
+			left: 20%;
+		}
+
+		@include media-max(768) {
+			display: none;
+		}
+	}
+
+	&__inner {
+		text-align: center;
+		position: relative;
+		padding: 187px 0;
+
+		// overflow-x: hidden;
+		@include media-max(768) {
+			padding: 56px 0 55px 0;
+		}
+
+		&::after {
+			position: absolute;
+			content: "";
+			background-image: url(../img/about-orange-circle.svg);
+			right: 0;
+			bottom: 67px;
+			width: 170.41px;
+			height: 170.41px;
+
+			@include media-max(768) {
+				right: -100px;
+				bottom: -93px;
+			}
+		}
+
+
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 35px;
+		line-height: 43px;
+		color: #1D1D1F;
+		margin-bottom: 20px;
+		position: relative;
+
+		@include media-max(550) {
+			font-size: 20px;
+			margin-bottom: 16px;
+			line-height: 100%;
+		}
+	}
+
+	&__text {
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 166.2%;
+		color: #1D1D1D;
+		max-width: 887px;
+		margin: 0 auto 24px;
+
+		@include media-max(768) {
+			font-size: 16px;
+		}
+
+		@include media-max(550) {
+			font-size: 13px;
+			line-height: 166.2%;
+		}
+	}
+
+	&__logo-span {
+		font-family: 'M PLUS 1p', sans-serif;
+		font-weight: 400;
+		font-size: 24px;
+		line-height: 24px;
+		color: #222222;
+
+		@include media-max(768) {
+			font-size: 16px;
+		}
+	}
+
+	&__logo-color {
+		color: #EF8F3C;
+	}
+
+	&__link {
+		width: 218px;
+		height: 48px;
+		background: #EF8F3C;
+		border-radius: 29px;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 17px;
+		color: #FFFFFF;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		position: relative;
+		transition: all .3s;
+
+	}
+	&__link:hover{
+		background: #656565;
+		transition: all .3s;
+	}
+
+}

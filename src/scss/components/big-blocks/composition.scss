@@ -1,0 +1,140 @@
+.composition {
+	position: relative;
+	&__inner {
+		padding: 97px 0px 82px;
+		border-bottom: 0.5px solid #E2E2E2;
+		@include media-max(768) {
+			padding: 35px 0px 32px;
+		}
+	}
+	&__big-circle{
+		position: absolute;
+		left: 0;
+		top: 166px;
+		@include media-max(1650) {
+			left: -60px;
+		}
+		@include media-max(1560) {
+			display: none;
+		}
+	}
+
+	&__title {
+		margin-bottom: 97px;
+		@include media-max(1024) {
+			text-align: center;
+		}
+		@include media-max(768) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		column-gap: 10px;
+		@include media-max(1024) {
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			row-gap: 30px;
+		}
+	}
+	&__item{
+		@include media-max(1024) {
+			text-align: center;
+		}
+	}
+	&__item-picture {
+		margin-bottom: 16px;
+		height: 68px;
+	}
+
+	&__item-title {
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 43px;
+		color: #1D1D1F;
+		margin-bottom: 7px;
+		@include media-max(768) {
+			font-size: 18px;
+		}
+		@include media-max(500) {
+			font-size: 16px;
+		}
+	}
+
+	&__item-descr {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 166.2%;
+		color: #1D1D1D;
+		max-width: 531px;
+		margin-bottom: 33px;
+		@include media-max(768) {
+			font-size: 15px;
+		}
+		@include media-max(500) {
+			font-size: 13px;
+		}
+		
+	}
+
+	&__item-link {
+		width: 245px;
+		height: 48px;
+		background: #EF8F3C;
+		border-radius: 29px;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 17px;
+		color: #FFFFFF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@include media-max(1024) {
+			margin: 0 auto;
+		}
+	}
+
+	&__card {
+		background: #F2F2F2;
+		border-radius: 29px;
+		min-height: 113px;
+		margin-top: 61px;
+		margin-bottom: 102px;
+		padding: 0px 35px 0 20px;
+		display: flex;
+		align-items: center;
+		column-gap: 26px;
+		@include media-max(1024) {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding-bottom: 22px;
+			margin-top: 32px;
+		}
+		@include media-max(650) {
+			margin-bottom: 52px;
+		}
+	}
+
+	&__card-descr {
+		font-weight: 400;
+		font-size: 20px;
+		color: #000000;
+		line-height: 100%;
+		@include media-max(1200) {
+			font-size: 19px;
+		}
+		@include media-max(1024) {
+			text-align: center;
+		}
+		@include media-max(768) {
+			font-size: 18px;
+		}
+		@include media-max(550) {
+			font-size: 16px;
+		}
+	}
+}

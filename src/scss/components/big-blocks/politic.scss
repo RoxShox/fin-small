@@ -1,0 +1,27 @@
+.politic {
+	padding: 76px 0px 126px;
+
+	&__title {
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 45px;
+		color: #222222;
+		margin-bottom: 34px;
+	}
+
+	& p {
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 166.2%;
+		color: #1D1D1D;
+	}
+	& p + p {
+		margin-top: 53px;
+	}
+	& .all-history__big-orange-circle{
+		bottom: 192px;
+	}
+	& .all-history__small-circle{
+		top: 536px;
+	}
+}
